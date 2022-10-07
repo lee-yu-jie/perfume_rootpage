@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header {
+  box-shadow: 10px 0 10px rgb(184, 184, 184);
+  margin-bottom: 1em;
+}
+header .header-box {
+  display: flex;
+  height: 5em;
+}
+header .header-box .logo {
+  height: 100%;
+  border-right: 1px solid rgb(195, 194, 194);
+}
+header .header-box .logo h1 {
+  height: 100%;
+}
+header .header-box .logo img {
+  object-fit: contain;
+  height: 100%;
+}
+header .header-box .header-nav {
+  flex-grow: 1;
+}
+header .header-box .header-nav .search-member {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  color: gray;
+  border-bottom: 1px solid rgb(195, 194, 194);
+}
+header .header-box .header-nav .search-member .search {
+  flex-grow: 1;
+}
+header .header-box .header-nav .search-member .search i {
+  margin-right: 1em;
+}
+header .header-box .header-nav .search-member .search input {
+  border: 0;
+  outline: none;
+  width: 90%;
+}
+header .header-box .header-nav .search-member .search ::placeholder {
+  color: gray;
+}
+header .header-box .header-nav .search-member .member {
+  border-left: 1px solid rgb(195, 194, 194);
+  padding: 0 3em;
+}
+header .header-box .header-nav .search-member .member i {
+  margin-right: 0.5em;
+}
+header .header-box .header-nav nav {
+  height: 50%;
+  color: gray;
+}
+header .header-box .header-nav nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+header .header-box .header-nav nav ul li {
+  margin-right: 1em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+header .header-box .header-nav nav ul li:hover {
+  color: black;
+  text-decoration: underline;
+}
+header .header-box .header-cart {
+  width: 50px;
+  height: 100%;
+  border-left: 1px solid rgb(195, 194, 194);
+  text-align: center;
+  padding: 0 2em;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .header-box .header-cart i {
+  font-size: 30px;
+}
+
+main .banner {
+  padding: 0 1em;
+  display: flex;
+  height: 400px;
+  margin-bottom: 1em;
+}
+main .banner .slideshow-container {
+  width: 50%;
+  position: relative;
+}
+main .banner .mySlides {
+  height: 100%;
+}
+main .banner .mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 3em 7em;
+}
+main .banner .prev, main .banner .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+main .banner .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+main .banner .prev:hover, main .banner .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+main .banner .fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main .banner .banner-bestseller {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+main .banner .banner-bestseller .bestseller-small, main .banner .banner-bestseller .bestseller-large {
+  width: 50%;
+  height: 100%;
+  padding-left: 1em;
+  box-sizing: border-box;
+}
+main .banner .banner-bestseller img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1em;
+}
+main .banner .banner-bestseller .small-img {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+}
+main .banner .banner-bestseller .small-img:first-child {
+  padding-bottom: 0.5em;
+}
+main .main-product {
+  background: rgb(248, 248, 248);
+  padding: 4em 0;
+}
+main .main-product .main-product-title {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+}
+main .main-product .box {
+  display: flex;
+  width: 900px;
+  margin: auto;
+}
+main .main-product .box .box-item {
+  width: 33%;
+  margin-right: 2em;
+}
+main .main-product .box .box-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+main .main-product .box .box-item .brand {
+  margin-bottom: 2em;
+}
+main .large-bg {
+  height: 500px;
+  background-image: url(./img/large-bg1.jpeg);
+  background-attachment: fixed;
+}
+main .brands-section {
+  padding: 4em;
+}
+main .brands-section h2 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+}
+main .brands-section .brands {
+  display: flex;
+  justify-content: space-around;
+}
+main .brands-section .brand-img {
+  width: 125px;
+  height: 125px;
+  border-top: 1px solid rgb(195, 194, 194);
+  border-bottom: 1px solid rgb(195, 194, 194);
+  position: relative;
+}
+main .brands-section .brand-img:hover p {
+  transform: scale(100%);
+}
+main .brands-section .brand-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+main .brands-section .brand-img p {
+  transform: scale(0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  color: white;
+  text-align: center;
+  line-height: 125px;
+  font-size: 1.5em;
+  transition: transform 0.3s;
+}
+main .month-star {
+  width: 1000px;
+  margin: auto;
+}
+main .month-star h2 {
+  font-family: "Lobster", cursive;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+  text-align: center;
+}
+main .month-star .item {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+}
+main .month-star .item .pic {
+  width: 50%;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main .month-star .item .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+main .month-star .item .text {
+  width: 50%;
+  position: relative;
+  padding: 2em;
+  box-sizing: border-box;
+  color: rgb(157, 56, 56);
+}
+main .month-star .item .text h3 {
+  font-size: 1.5em;
+}
+main .month-star .item .text .product-name {
+  margin-bottom: 2em;
+}
+main .month-star .item .text .product-introduce {
+  color: #000;
+}
+
+footer {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 5em;
+  color: white;
+  text-align: center;
+}
+footer .footer-content {
+  width: 66%;
+  display: flex;
+}
+footer .footer-content .about, footer .footer-content .open-time {
+  width: 50%;
+}
+footer .footer-content .about h2, footer .footer-content .open-time h2 {
+  margin-bottom: 0.5em;
+}
+footer .footer-content .about p, footer .footer-content .open-time p {
+  font-family: "Lobster", cursive;
+}
+footer .footer-content .about .statement, footer .footer-content .open-time .statement {
+  margin-top: 2.5em;
+}
+footer iframe {
+  height: 200px;
+  width: 33%;
+}
+
+/*# sourceMappingURL=style.css.map */

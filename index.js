@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll('[data-carousel-button]')
 const slides = document.querySelectorAll(".mySlides");
-
+new WOW().init();
 let slideIndex = 0;
 showSlides(slideIndex);
 function showSlides(n) {
